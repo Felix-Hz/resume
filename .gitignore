@@ -1,6 +1,10 @@
 # Archieve
 Archieve/
 
+# AI stuff
+CLAUDE.md
+.claude
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

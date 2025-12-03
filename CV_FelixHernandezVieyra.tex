@@ -1,0 +1,279 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Felix Hernandez Vieyra
+% Based on: Sourabh Bajaj's template
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/Felix-Hz}{\Large Felix Hernandez Vieyra}} & Visa: NZ Open Work Until 2028 \\
+   \href{https://www.credly.com/badges/9cacb43b-eb02-45df-bb40-1176c09ea7f2/linked_in_profile}{Software Engineer | AWS Cloud Certified} & Email: \href{mailto:felix.hzv@gmail.com}{felix.hzv@gmail.com}\\
+  \href{https://www.felix-hzv.dev}{felix-hzv.dev} & Mobile: \href{tel:+6421925790}{+64 21 925 790} \\
+  \href{https://github.com/Felix-Hz}{github.com/Felix-Hz} & Auckland, New Zealand \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\vspace{6pt}
+\small{
+I thrive in environments where I can take on diverse responsibilities and deliver on high-pressure deadlines with strong customer focus. Continuously learning new technologies and dedicated to building extensible, performant, and resilient software. Outside of work, I'm a social person and music enthusiast who enjoys flying drones and learning Dutch.
+}
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming Languages}{: Python, TypeScript, Golang, C\#}
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Databases}{: PostgreSQL, MySQL, SQLite, DynamoDB}
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Frameworks \& Tools}{: Flask, FastAPI, Pydantic, Node.js, Express.js, React, Vue, Remix, Next.js, .NET}
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Cloud \& DevOps}{: AWS, Linux, Docker, CI/CD, Infrastructure-as-Code (Terraform, CDK, CloudFormation), Git}
+    }
+    \vspace{-5pt}
+    \item{
+      \textbf{Data Engineering}{: Databricks, ETL pipelines, Data Wrangling, Analysis \& Visualization}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infinity Studio}{Auckland, New Zealand}
+      {Intermediate Software Engineer}{April 2024 -- Dec 2025 (1.5+ years)}
+      \resumeItemListStart
+        \resumeItem{Company Context}
+          {Geotechnical engineering platform enabling field data collection, infrastructure design workflows, liquefaction risk analysis, and parameter correlations for engineering teams.}
+        \resumeItem{Product Development}
+          {Built and maintained 50+ end-to-end features and Python-based platform services to support geotechnical engineers, improving operational efficiency and data accuracy.}
+        \resumeItem{RESTful API Development}
+          {Designed and implemented multiple RESTful APIs to perform complex analyses, export data, and generate custom PDF reports, enabling seamless integration with client workflows.}
+        \resumeItem{Domain Modeling}
+          {Modeled geotechnical engineering domain problems into well-structured, maintainable software solutions, collaborating closely with subject matter experts to ensure technical accuracy.}
+        \resumeItem{Front-End Development}
+          {Built high-performance, pixel-perfect, and secure front-end layouts using modern JavaScript frameworks, enhancing user experience and interface responsiveness.}
+        \resumeItem{Testing \& Quality}
+          {Implemented comprehensive unit and integration tests to enhance code quality, reliability, and maintainability across the platform.}
+        \resumeItem{Infrastructure-as-Code}
+          {Developed infrastructure-as-code solutions for robust, automated, and scalable cloud environment deployments, reducing deployment time and infrastructure drift.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Decodata}{Amsterdam, The Netherlands}
+      {Full-Stack Software Engineer}{July 2023 -- February 2024 (8 months)}
+      \resumeItemListStart
+        \resumeItem{Company Context}
+          {SaaS platform for furniture industry data management, enabling product catalog automation, design asset processing, and supplier integrations.}
+        \resumeItem{Data Processing}
+          {Built back-end systems to manage and transform large volumes of design and product data, including pattern matching with regular expressions and image processing pipelines.}
+        \resumeItem{User Interface Design}
+          {Built intuitive user interfaces that balanced design, performance, security, and responsive behavior across devices, improving user engagement and satisfaction.}
+        \resumeItem{Cloud Infrastructure}
+          {Built and maintained cloud infrastructure-as-code with best practices, enabling efficient deployment, monitoring, and resilience of production systems.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FeedProfessionals Ltda.}{Buenos Aires, Argentina}
+      {Junior Python Developer}{January 2023 -- July 2023 (7 months)}
+      \resumeItemListStart
+        \resumeItem{Data Pipeline Automation}
+          {Automated the customs data pipeline, improving report delivery time by 75\% through analysis of datasets covering 5+ products from multiple countries across South America over 10+ years.}
+        \resumeItem{Data Gathering}
+          {Implemented efficient data collection and processing workflows to support business intelligence and reporting needs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Calgary}{Calgary, Canada}
+      {ELAP Scholarship Holder (Student Exchange)}{June 2022 -- December 2022 (6 months)}
+      \resumeItemListStart
+        \resumeItem{Research Collaboration}
+          {Collaborated with a research team on publishing an article in a leading academic journal, contributing to neuroscience research methodologies.}
+        \resumeItem{Academic Excellence}
+          {Secured scholarship in recognition of academic excellence, covering tuition, mobility expenses, and stay in Canada.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cognitive Neuroscience Laboratory (UdeSA)}{Buenos Aires, Argentina}
+      {Research Assistant (Internship)}{March 2022 -- June 2022 (6 months)}
+      \resumeItemListStart
+        \resumeItem{Machine Learning Research}
+          {Documented and reviewed Python code in a machine learning (NLP) clinical project for early detection of dementia, contributing to research methodologies and reproducibility.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University del Salvador}{Buenos Aires, Argentina}
+      {Bachelor of Science in Psychology; GPA: 9.17/10.0 (Top 5\% of degree)}{March 2019 -- December 2022}
+      \resumeItemListStart
+        \resumeItem{Research Excellence}
+          {Discontinued after 4 years out of 5 to pursue career transition. Intensively participated in a Cognitive Neuroscience research lab, gaining strong analytical and research skills.}
+        \resumeItem{Self-Directed Learning}
+          {Highly motivated to learn computer science, enrolled in multiple data science and software development courses alongside degree studies.}
+        \resumeItem{Specialized Coursework}
+          {Completed university courses in Data Structures \& Algorithms, Programming, and Operative Systems, building strong foundations in computer science.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Calgary}{Calgary, Canada}
+      {Exchange Student, Cognitive Science (ELAP Scholarship Holder)}{August 2022 -- January 2023}
+      \resumeItemListStart
+        \resumeItem{Academic Focus}
+          {Completed coursework in Statistics \& Research Methods, Neuroscience, and Psychometry, utilizing IBM SPSS for statistical data analysis.}
+        \resumeItem{Career Catalyst}
+          {Academic experience reinforced commitment to pursuing software engineering, bridging cognitive science with technical problem-solving approaches.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------ADDITIONAL EDUCATION-----------------
+\section{Professional Development}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Le Wagon}{Amsterdam, The Netherlands}
+      {Data Engineering Course (360 hours)}{Completed}
+      \resumeItemListStart
+        \resumeItem{Curriculum}
+          {Intensive Python-based curriculum focused on modern data workflows, including data preparation, ETL automation, visualization, and machine learning pipelines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digital House}{Buenos Aires, Argentina}
+      {Web Development}{August 2021 -- February 2022}
+      \resumeItemListStart
+        \resumeItem{Front-End Development}
+          {Enhanced proficiency in wireframing, layout design, styling, animation, and DOM manipulation using modern JavaScript frameworks for responsive, mobile-first, single-page applications.}
+        \resumeItem{Back-End Development}
+          {Developed expertise in relational database management, server-side programming, and RESTful API integration following agile methodologies and coding best practices.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{AWS Certified Cloud Practitioner}
+      {Amazon Web Services (December 2023 -- Expires December 2026)}
+    \resumeSubItem{AWS Solutions Architect Associate (WIP)}
+      {Amazon Web Services (November 2025 -- Present, In Progress)}
+  \resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeSubItem{English}
+      {IB English as Second Language -- Full Professional Proficiency}
+    \resumeSubItem{Spanish}
+      {Native level}
+    \resumeSubItem{French/Portuguese/Dutch}
+      {Basic conversational level}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Awards \& Congress}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://www.educanada.ca/scholarships-bourses/can/institutions/elap-pfla.aspx?lang=eng}{Emerging Leaders in the Americas}}
+      {Secured scholarship in recognition of academic excellence, covering tuition, mobility expenses, and stay in Canada (June 2022 -- December 2022)}
+    \resumeSubItem{\href{https://ji.psi.uba.ar/xxviii/esp/index.php?idtaller=553}{XIII International Research and Practice in Psychology Congress}}
+      {Delivered a workshop on Programming in R for Researchers at Universidad de Buenos Aires}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
