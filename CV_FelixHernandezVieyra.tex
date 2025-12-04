@@ -86,6 +86,12 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\techStackList}[1]{%
+  % \vspace{1pt}%
+  \item[$\rightarrow$]{\scriptsize\textit{#1}}%
+  \vspace{2pt}%
+}
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -154,7 +160,8 @@ I thrive in environments where I can take on diverse responsibilities and delive
           {Implemented comprehensive unit and integration tests to enhance code quality, reliability, and maintainability across the platform.}
         \resumeItem{Infrastructure-as-Code}
           {Developed infrastructure-as-code solutions for robust, automated, and scalable cloud environment deployments, reducing deployment time and infrastructure drift.}
-      \resumeItemListEnd
+        \techStackList{Python, TypeScript, Flask, Pydantic, PostgreSQL, SQLAlchemy, React, Remix, Zod, React Hook Form, Databricks, Terraform, GitHub Actions, Pytest, Vitest, Sentry, Clerk, AWS (Lambda, Step Functions, ECS, RDS, DynamoDB, S3, EventBridge, SQS, CloudFront)}
+    \resumeItemListEnd
 
     \resumeSubheading
       {Decodata}{Amsterdam, The Netherlands}
@@ -168,7 +175,8 @@ I thrive in environments where I can take on diverse responsibilities and delive
           {Built intuitive user interfaces that balanced design, performance, security, and responsive behavior across devices, improving user engagement and satisfaction.}
         \resumeItem{Cloud Infrastructure}
           {Built and maintained cloud infrastructure-as-code with best practices, enabling efficient deployment, monitoring, and resilience of production systems.}
-      \resumeItemListEnd
+        \techStackList{Python, TypeScript, FastAPI, Vue, Nuxt.js, PostgreSQL, DynamoDB, DBT, Terraform, Pytest, Jest, AWS (Lambda, S3, Aurora, DynamoDB, EC2, Amplify, Cognito, SNS, CDK, CloudWatch)}
+    \resumeItemListEnd
 
     \resumeSubheading
       {FeedProfessionals Ltda.}{Buenos Aires, Argentina}
@@ -178,6 +186,7 @@ I thrive in environments where I can take on diverse responsibilities and delive
           {Automated the customs data pipeline, improving report delivery time by 75\% through analysis of datasets covering 5+ products from multiple countries across South America over 10+ years.}
         \resumeItem{Data Gathering}
           {Implemented efficient data collection and processing workflows to support business intelligence and reporting needs.}
+        \techStackList{Python, NumPy, Pandas, WordPress, AWS (EC2), Looker Studio}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -188,6 +197,7 @@ I thrive in environments where I can take on diverse responsibilities and delive
           {Collaborated with a research team on publishing an article in a leading academic journal, contributing to neuroscience research methodologies.}
         \resumeItem{Academic Excellence}
           {Secured scholarship in recognition of academic excellence, covering tuition, mobility expenses, and stay in Canada.}
+        \techStackList{Python, NumPy, Pandas, SPSS, R, R Studio, Tidyverse}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -196,6 +206,7 @@ I thrive in environments where I can take on diverse responsibilities and delive
       \resumeItemListStart
         \resumeItem{Machine Learning Research}
           {Documented and reviewed Python code in a machine learning (NLP) clinical project for early detection of dementia, contributing to research methodologies and reproducibility.}
+        \techStackList{Python, NumPy, Pandas, Matplotlib, NLTK, SpaCy}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
